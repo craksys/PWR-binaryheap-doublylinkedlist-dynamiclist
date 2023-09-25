@@ -8,7 +8,7 @@ public:
 	void init_Tab() {
 		int* tab = new int[1]; //deklaracja tablicy dynamicznej
 		tab[0] = 0;
-		pointerTab = tab; //przypisanie tablicy do wskaŸnik
+		pointerTab = tab; //przypisanie tablicy do wskaï¿½nik
 		size_of_tab++;
 	}
 
@@ -25,7 +25,7 @@ public:
 		sort_Mound();
 	}
 	void delete_Element() {
-		if (size_of_tab < 2) { return; } //warunek sprawdzaj¹cy czy jest mo¿liwe usuniêcie z kopca
+		if (size_of_tab < 2) { return; } //warunek sprawdzajï¿½cy czy jest moï¿½liwe usuniï¿½cie z kopca
 		int i = 0;
 		int* temp = new int[size_of_tab - 1];
 		for (; i < size_of_tab-1; i++) {
@@ -65,7 +65,7 @@ public:
 	}
 
 	void print_Elements() {
-		system("CLS");
+		//system("CLS");
 		int count_printed = 0;
 		int space = 30;
 		for (int i = 0; i < size_of_tab; i++) {
@@ -73,22 +73,22 @@ public:
 			case 1:
 				cout << endl;
 				space = 27;
-				for (int j = 0; j < space; j = j++) { cout << " "; }
+				for (int j = 0; j < space; j++) { cout << " "; }
 				break;
 			case 3:
 				cout << endl;
 				space = 24;
-				for (int j = 0; j < space; j = j++) { cout << " "; }
+				for (int j = 0; j < space; j++) { cout << " "; }
 				break;
 			case 7:
 				cout << endl;
 				space = 17;
-				for (int j = 0; j < space; j = j++) { cout << " "; }
+				for (int j = 0; j < space; j++) { cout << " "; }
 				break;
 			case 15:
 				cout << endl;
 				space = 0;
-				for (int j = 0; j < space; j = j++) { cout << " "; }
+				for (int j = 0; j < space; j++) { cout << " "; }
 				break;
 			case 31:
 				cout << endl;
@@ -96,7 +96,7 @@ public:
 			default:
 				break;
 			}
-			if (i == 0) { for (int j = 0; j < space; j = j++) { cout << " "; } }
+			if (i == 0) { for (int j = 0; j < space; j++) { cout << " "; } }
 			cout << pointerTab[i]<<" ";
 		}
 	}
